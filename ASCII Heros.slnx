@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ASCII Heros/ASCII Heros.vcxproj" Id="c5278c5a-1d5a-4ea8-860a-9152faa62b1d" />
+</Solution>
