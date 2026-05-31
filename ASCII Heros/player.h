@@ -1,3 +1,5 @@
+#pragma once
+
 class player
 {
 public:
@@ -6,5 +8,5 @@ public:
 
     void draw();
     void erase();
-    void move();
+    void move(int changeX, int changeY);
 };

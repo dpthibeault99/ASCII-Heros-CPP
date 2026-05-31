@@ -19,6 +19,8 @@ void gotoXY(int x, int y)
 
 int main()
 {
+    cout << "hola" << endl;
+
     player john;
 
     john.x = 10;

@@ -31,9 +31,10 @@ void player::draw()
     cout << " / \\" << endl;
 }
 
-void player::move()
+void player::move(int changeX, int changeY)
 {
-    x++;
+    x += changeX;
+    y += changeY;
 }
 
 void player::erase()
