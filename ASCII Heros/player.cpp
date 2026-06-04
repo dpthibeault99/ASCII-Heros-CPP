@@ -1,36 +1,33 @@
 #include <iostream>
+#include <string>
 #include "player.h"
 
 using namespace std;
 
 void player::draw()
 {
-    cout << "x: " << x << " y: " << y << endl;
+    string stickArray[] =
+    {
+        "  O",
+        " /|\\",
+        " / \\"
+    };
 
     for (int i = 0; i < y; i++)
     {
         cout << endl;
     }
 
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 3; i++)
     {
-        cout << " ";
-    }
-    cout << "  O" << endl;
+        for (int space = 0; space < x; space++)
+        {
+            cout << " ";
+        }
 
-    for (int i = 0; i < x; i++)
-    {
-        cout << " ";
+        cout << stickArray[i] << endl;
     }
-    cout << " /|\\" << endl;
-
-    for (int i = 0; i < x; i++)
-    {
-        cout << " ";
-    }
-    cout << " / \\" << endl;
 }
-
 void player::move(int changeX, int changeY)
 {
     x += changeX;
@@ -39,26 +36,25 @@ void player::move(int changeX, int changeY)
 
 void player::erase()
 {
+    string blankArray[] =
+    {
+        "   ",
+        "    ",
+        "    "
+    };
+
     for (int i = 0; i < y; i++)
     {
         cout << endl;
     }
 
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 3; i++)
     {
-        cout << " ";
-    }
-    cout << "   " << endl;
+        for (int space = 0; space < x; space++)
+        {
+            cout << " ";
+        }
 
-    for (int i = 0; i < x; i++)
-    {
-        cout << " ";
+        cout << blankArray[i] << endl;
     }
-    cout << "    " << endl;
-
-    for (int i = 0; i < x; i++)
-    {
-        cout << " ";
-    }
-    cout << "    " << endl;
 }

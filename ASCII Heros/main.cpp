@@ -1,5 +1,7 @@
 #include <iostream>
 #include <windows.h>
+#include <string>
+
 
 #include "player.h"
 #include "controls.h"
@@ -30,11 +32,12 @@ int main()
 
     while (gameRunning)
     {
-        // move cursor to top-left
         gotoXY(0, 0);
+        john.erase();
 
         controls(john, gameRunning);
 
+        gotoXY(0, 0);
         john.draw();
     }
 
